@@ -13,7 +13,8 @@ h1 {
 #film {
   width: 110px;
   height: 110px ;
-
+  margin-right: 25px;
+  margin-top: 10px;
 }
 
 input {
