@@ -7,6 +7,7 @@
     <link  rel = "icon"  href = "C:\Users\Meli\Desktop\proyecto filme\posters\favicon.ico"  type = "image / x-icon" >
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
     <title>Filmsify</title>
 </head>
 
@@ -95,6 +96,47 @@
        
     </Section>
 
+    <div id="slider-container">
+
+            <div class="my-slider">
+              <div class="slider-item">
+                <div class="card">                
+                  <img class="img" src="posters\sonic.jfif" alt="">
+                </div>
+              </div>
+            
+
+              <div class="slider-item">
+                  <div class="card">                
+                    <img class="img" src="posters/angrybirds.jpg" alt="">
+                  </div>
+             </div>
+
+            <div class="slider-item">
+              <div class="card">                
+                  <img class="img" src="posters/Joker.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="slider-item">
+                <div class="card">                
+                  <img class="img" src="posters/charliesangles.jfif" alt="">
+                </div>
+            </div>
+
+            <div class="slider-item">
+                <div class="card">                
+                        <img class="img" src="posters/ItACoisa2.jpg" alt="">
+                </div>
+              </div>
+
+              <div id="slider-controls">
+                <div>&lt; Anterior</div>
+                <div>Próximo &gt;</div>
+            </div>
+            </div>
+    </div>
+
 </main>
 
     <footer>
@@ -104,5 +146,18 @@
         <div>Copyright &copy; <a>VALERIA & MELICIA</a></div>
     </footer>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script> 
+    <script>
+var slider = tns({
+  container: '.my-slider',
+  items: 3,
+  slideBy: 1,
+  autoplay: true,
+  controlsContainer: "#slider-controls",
+  nav: false,
+  autoplayButtonOutput: false
+});
+    </script>
+
 </body>
 </html>

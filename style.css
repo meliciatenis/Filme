@@ -126,6 +126,25 @@ h2 {
     background: #3E8989;
 }
 
+#slider-container {
+  width: 80%;
+  margin: auto;
+  background: #564D65;
+}
+.card {
+  display: flex;
+}
+#slider-container img {
+  max-height: 300px;
+  margin: auto;
+  padding: 1em;
+}
+#slider-controls {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
 footer {
     padding: 1em 0;
     background: #3E8989;
