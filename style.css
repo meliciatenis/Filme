@@ -5,9 +5,17 @@ body {
 }
 
 h1 { 
-  font-size: 135px;
+  font-size: 120px;
   margin-block-start: 0.15em;
   margin-block-end: 0em;
+ 
+}
+
+#menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+
 }
 
 #film {
@@ -26,9 +34,9 @@ input {
 }
 
 .buscador{
-  text-align: right;
   margin-bottom: 15px;
   margin-block-end: -0.15em;
+  
 }
 
 .buttom {
@@ -39,6 +47,7 @@ input {
   justify-content: right;
   color: white;
   height: 30px;
+  margin-right: 10px;
 }
 
 .buttom:hover { 
@@ -62,16 +71,17 @@ h2 {
 
 .categorias a img:hover {
   background-color: #BDA8DD; 
-  width: 429x;
-  height: 326px;
-  padding: 10px;  
-  margin-bottom: 15px;
   text-align: center;
+  transform: scale(1.05);
+  position: relative;
+  bottom: 5px;
+  opacity: 1;
 }
 
-img {
+.img {
   width: 409x;
   height: 306px;
+  opacity: 0.7;
 }
 
 #icons {
