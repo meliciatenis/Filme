@@ -65,7 +65,7 @@ h2 {
   text-decoration: none;
 }
 
-.h2 {
+a {
   text-align: right;
   margin-block-start: 0px;
   margin-block-end: 0.83m;
@@ -174,10 +174,12 @@ h2 {
   max-height: 300px;
   margin: auto;
   padding: 1em;
+  justify-content: space-between;
+  
 }
 #slider-controls {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
 }
 
