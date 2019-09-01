@@ -11,12 +11,26 @@ h1 {
  
 }
 
+#INSCRIBIR-SE {
+  background: #05F140;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 10px;
+  position: fixed;
+  right: 1em;
+  top: 1em;
+  z-index: 2;
+}
+
+#INSCRIBIR-SE:hover {
+    background: #3E8989;
+}
 
 #menu {
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
-
 }
 
 #film {
@@ -55,66 +69,6 @@ input {
   background: #BDA8DD;
 }
 
-h2 {
-  text-align: right;
-  margin-block-start: 0px;
-  margin-block-end: 0.83m;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  color: white;
-  text-decoration: none;
-}
-
-a {
-  text-align: right;
-  margin-block-start: 0px;
-  margin-block-end: 0.83m;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  color: white;
-  text-decoration: none;
-}
-
-.h2:hover {
-  text-decoration: none;
-  color: #BDA8DD; 
-  transform: scale(1.02);
-  opacity: 1;
-}
-
-.categorias {
-  background-color: #564D65;
-  padding: 15px;  
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.categorias a img:hover {
-  background-color: #BDA8DD; 
-  text-align: center;
-  transform: scale(1.05);
-  position: relative;
-  bottom: 5px;
-  opacity: 1;
-}
-
-.imgc {
-  opacity: 1;
-  width: 409x;
-  height: 306px;
-}
-
-.img {
-  width: 409x;
-  height: 306px;
-  opacity: 0.7;
-}
-
-#icons {
-  widows: 100px ;
-  height: 100px ;
-}
-
 #main-nav ul {
   background: #2CDA9D;
   list-style: none;
@@ -137,21 +91,61 @@ a {
   box-shadow: inset 0 -3px #564D65;
 }
 
-#INSCRIBIR-SE {
-  background: #05F140;
+h2 {
+  text-align: right;
+  margin-block-start: 0px;
+  margin-block-end: 0.83m;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   color: white;
   text-decoration: none;
-  padding: 8px;
-  border-radius: 10px;
-  position: fixed;
-  right: 1em;
-  top: 1em;
 }
 
-#INSCRIBIR-SE:hover {
-    background: #3E8989;
+.h2:hover {
+  text-decoration: none;
+  color: #BDA8DD; 
+  transform: scale(1.02);
+  opacity: 1;
 }
 
+a {
+  text-align: right;
+  margin-block-start: 0px;
+  margin-block-end: 0.83m;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: white;
+  text-decoration: none;
+}
+
+.categorias {
+  background-color: #564D65;
+  padding: 15px;  
+  margin-bottom: 15px;
+  text-align: center;
+  
+}
+
+.categorias a img:hover {
+  background-color: #BDA8DD; 
+  text-align: center;
+  transform: scale(1.05);
+  position: relative;
+  bottom: 5px;
+  opacity: 1;
+}
+
+.imgc {
+  opacity: 1;
+  width: 409x;
+  height: 306px;
+}
+
+.img {
+  width: 409x;
+  height: 306px;
+  opacity: 0.7;
+}
 
 .next{
   width: 18px;
