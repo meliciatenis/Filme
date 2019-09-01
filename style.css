@@ -11,6 +11,7 @@ h1 {
  
 }
 
+
 #menu {
    display: flex;
    justify-content: space-between;
@@ -64,7 +65,17 @@ h2 {
   text-decoration: none;
 }
 
-h2:hover {
+.h2 {
+  text-align: right;
+  margin-block-start: 0px;
+  margin-block-end: 0.83m;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: white;
+  text-decoration: none;
+}
+
+.h2:hover {
   text-decoration: none;
   color: #BDA8DD; 
   transform: scale(1.02);
