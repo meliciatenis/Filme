@@ -35,18 +35,52 @@
 </header>
 
 <main>
-    <section class="categorias">
-        <h2>ESTRENOS</h2>
 
-        <a href="#"><img class="img" src="posters/sonic.jfif" alt="sonic"></a>
-        <a href="#"><img class="img" src="posters/angrybirds.jpg" alt="angrybirds"></a>
-        <a href="#"><img class="img" src="posters/Joker.jpg" alt="Joker"></a>
-        <a href="#"><img class="img" src="posters/charliesangles.jfif" alt="charliesangles"></a>
-        <a href="#"><img class="img" src="posters/ItACoisa2.jpg" alt="ItACoisa2"></a>
+  <section class="categorias">
+    <h2>ESTRENOS</h2>
+
+    <div id="slider-container">
+        <div class="my-slider">
+          <div class="slider-item">
+            <div class="card">                
+              <img class="imgc" src="posters/sonic.jfif" alt="">
+            </div>
+          </div>
+          <div class="slider-item">
+              <div class="card">                
+                <img class="imgc" src="posters/angrybirds.jpg" alt="">
+              </div>
+            </div>
+          <div class="slider-item">
+            <div class="card">                
+              <img class="imgc" src="posters/Joker.jpg" alt="">
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="card">                
+              <img class="imgc" src="posters/charliesangles.jfif" alt="">
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="card">                
+              <img class="imgc" src="posters/yesterday.jpg" alt="">
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="card">                
+              <img class="imgc" src="posters/ItACoisa2.jpg" alt="">
+            </div>
+          </div>
+          </div>
+          <div id="slider-controls">
+            <div>&lt; <img class="next" src="posters/move-to-next1.png" alt=""></div>
+            <div> <img class="next" src="posters/move-to-next.png" alt=""> &gt;</div>
+          </div>
+        </div>
     </section>
 
     <Section class="categorias">
-        <h2>COMEDIA</h2>
+        <a href="#"> <h2>COMEDIA<img class="next" src="posters/move-to-next.png" alt=""></h2></a>
 
         <a href="#"><img class="img" src="posters/DePernasProAr3.jpg" alt="DePernasProAr3"></a>
         <a href="#"><img class="img" src="posters/umanovachance.jpg" alt="umanovachance"></a>
@@ -55,7 +89,7 @@
     </Section>
 
     <section class="categorias">
-          <h2>SUPER HEROIS</h2>
+        <a href="#"> <h2>SUPER HEROI<img class="next" src="posters/move-to-next.png" alt=""></h2></a>
             
           <a href="#"><img class="img" src="posters/CapitãMarvel.jpg" alt="CapitãMarvel"></a>
           <a href="#"><img class="img" src="posters/Homem-AranhaLongedeCasa.jpg" alt="Homem-AranhaLongedeCasa"></a>
@@ -66,7 +100,7 @@
     </section>
 
     <Section class="categorias">
-        <h2>ACCION</h2>
+        <a href="#"> <h2>ACCION<img class="next" src="posters/move-to-next.png" alt=""></h2></a>
 
         <a href="#"><img class="img" src="posters/Fast&FuriousPresents.jfif" alt="Fast & Furious Presents"></a>
         <a href="#"><img class="img" src="posters/GodzillaOReidosMonstros.jpg" alt="GodzillaOReidosMonstros"></a>
@@ -76,7 +110,7 @@
      </Section>
     
     <Section class="categorias">
-        <h2>INFANTIL</h2>
+        <a href="#"> <h2>INFANTIL<img class="next" src="posters/move-to-next.png" alt=""></h2></a>
 
         <a href="#"><img class="img" src="posters/UmaAventuraLego2.jpg" alt="UmaAventuraLego2"></a>
         <a href="#"><img class="img" src="posters/ToyStory4.jpg" alt="ToyStory4"></a>
@@ -87,7 +121,7 @@
     </Section>
 
     <Section class="categorias">
-        <h2>TERROR</h2>
+        <a href="#"> <h2>TERROR<img class="next" src="posters/move-to-next.png" alt=""></h2></a>
 
         <a href="#"><img class="img" src="posters/ItACoisa2.jpg" alt="ItACoisa2"></a>
         <a href="#"><img class="img" src="posters/Annabelle3.jpg" alt="Annabelle3"></a>
@@ -96,48 +130,6 @@
        
     </Section>
 
-    <div id="slider-container">
-
-            <div class="my-slider">
-              <div class="slider-item">
-                <div class="card">                
-                  <img class="img" src="posters\sonic.jfif" alt="">
-                </div>
-              </div>
-            
-
-              <div class="slider-item">
-                  <div class="card">                
-                    <img class="img" src="posters/angrybirds.jpg" alt="">
-                  </div>
-             </div>
-
-            <div class="slider-item">
-              <div class="card">                
-                  <img class="img" src="posters/Joker.jpg" alt="">
-              </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="card">                
-                  <img class="img" src="posters/charliesangles.jfif" alt="">
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="card">                
-                        <img class="img" src="posters/ItACoisa2.jpg" alt="">
-                </div>
-              </div>
-
-              <div id="slider-controls">
-                <div>&lt; Anterior</div>
-                <div>Próximo &gt;</div>
-            </div>
-            </div>
-    </div>
-
-</main>
 
     <footer>
         <div>Contato</div>
@@ -148,9 +140,9 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script> 
     <script>
-var slider = tns({
+  var slider = tns({
   container: '.my-slider',
-  items: 3,
+  items: 5,
   slideBy: 1,
   autoplay: true,
   controlsContainer: "#slider-controls",

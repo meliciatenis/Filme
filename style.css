@@ -60,6 +60,15 @@ h2 {
   margin-block-end: 0.83m;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  color: white;
+  text-decoration: none;
+}
+
+h2:hover {
+  text-decoration: none;
+  color: #BDA8DD; 
+  transform: scale(1.02);
+  opacity: 1;
 }
 
 .categorias {
@@ -76,6 +85,12 @@ h2 {
   position: relative;
   bottom: 5px;
   opacity: 1;
+}
+
+.imgc {
+  opacity: 1;
+  width: 409x;
+  height: 306px;
 }
 
 .img {
@@ -126,14 +141,24 @@ h2 {
     background: #3E8989;
 }
 
-#slider-container {
-  width: 80%;
-  margin: auto;
-  background: #564D65;
+
+.next{
+  width: 18px;
+  height: 18px;
+  align-items: center;
 }
+
 .card {
   display: flex;
 }
+
+#slider-container {
+  width: 100%;
+  margin: auto;
+  background: #564D65;
+  margin-bottom: 15px;
+}
+
 #slider-container img {
   max-height: 300px;
   margin: auto;
