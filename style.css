@@ -123,8 +123,9 @@ a {
   padding: 15px;  
   margin-bottom: 15px;
   text-align: center;
-  
-}
+  margin-right : 20px;
+  margin-left : 20px;
+  }
 
 .categorias a img:hover {
   background-color: #BDA8DD; 
@@ -139,18 +140,32 @@ a {
   opacity: 1;
   width: 409x;
   height: 306px;
+
+ 
 }
 
 .img {
   width: 409x;
   height: 306px;
   opacity: 0.7;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  
 }
 
 .next{
   width: 18px;
   height: 18px;
   align-items: center;
+}
+
+@media (max-width: 1000px) {
+
+  #menu {
+    align-items: flex-end;
+ }
+
+ 
 }
 
 .card {
@@ -167,9 +182,7 @@ a {
 #slider-container img {
   max-height: 300px;
   margin: auto;
-  padding: 1em;
-  justify-content: space-between;
-  
+
 }
 #slider-controls {
   display: flex;

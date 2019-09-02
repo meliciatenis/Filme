@@ -172,14 +172,28 @@
     <script>
   var slider = tns({
   container: '.my-slider',
-  items: 5,
+  items: 1,
   slideBy: 1,
   autoplay: true,
   controlsContainer: "#slider-controls",
   nav: false,
-  autoplayButtonOutput: false
-});
-    </script>
+  autoplayButtonOutput: false,
 
-</body>
+  responsive: {
+    1200: {
+    items: 5
+  },
+  800: {
+    items: 3
+  },
+
+  500 : { 
+    items: 2
+      }
+    }
+  
+  });
+
+    </script>
+  </body>
 </html>
