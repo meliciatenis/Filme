@@ -4,6 +4,13 @@ body {
  color: white;
 }
 
+#film {
+  width: 110px;
+  height: 110px ;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
 h1 { 
   font-size: 120px;
   margin-block-start: 0.15em;
@@ -31,13 +38,6 @@ h1 {
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
-}
-
-#film {
-  width: 110px;
-  height: 110px ;
-  margin-right: 25px;
-  margin-top: 10px;
 }
 
 input {
@@ -78,17 +78,51 @@ input {
 }
 
 #main-nav ul li {
-  display: inline-flex;
+  display: flex;
+  z-index: 3 ;
+  position: relative;
 }
 
-#main-nav ul a {
+
+#main-nav li a {
   text-decoration: none;
   padding: 1em 0.5em;
   color: white;
 }
 
+#main-nav li ul {
+  display: none;
+  min-width: 140px;
+  position: absolute ;
+  right: -150px;
+}
+
+
 #main-nav ul a:hover {
   box-shadow: inset 0 -3px #564D65;
+}
+
+#main-nav li:hover > ul {
+  display: block;
+  background: #3E8989;
+ }
+
+#slider-container {
+  width: 100%;
+  margin: auto;
+  background: #564D65;
+  margin-bottom: 15px;
+}
+
+#slider-container img {
+  max-height: 300px;
+  margin: auto;
+
+}
+#slider-controls {
+  display: flex;
+  justify-content: space-between;
+  color: white;
 }
 
 h2 {
@@ -159,35 +193,8 @@ a {
   align-items: center;
 }
 
-@media (max-width: 1000px) {
-
-  #menu {
-    align-items: flex-end;
- }
-
- 
-}
-
 .card {
   display: flex;
-}
-
-#slider-container {
-  width: 100%;
-  margin: auto;
-  background: #564D65;
-  margin-bottom: 15px;
-}
-
-#slider-container img {
-  max-height: 300px;
-  margin: auto;
-
-}
-#slider-controls {
-  display: flex;
-  justify-content: space-between;
-  color: white;
 }
 
 footer {
