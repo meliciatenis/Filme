@@ -6,7 +6,6 @@ body {
 
 #film {
   width: 110px;
-  height: 110px ;
   margin-right: 25px;
   margin-top: 10px;
 }
@@ -16,6 +15,28 @@ h1 {
   margin-block-start: 0.15em;
   margin-block-end: 0em;
  
+}
+
+@media (max-width:640px) {
+    h1 {
+      font-size: 90px;
+    }
+    #film {
+      width: 70px;
+
+    }
+
+}
+
+@media (max-width:320px) {
+  h1 {
+    font-size: 45px;
+  }
+  #film {
+    width: 35px;
+
+  }
+
 }
 
 #INSCRIBIR-SE {
@@ -32,6 +53,15 @@ h1 {
 
 #INSCRIBIR-SE:hover {
     background: #3E8989;
+}
+
+@media (max-width:640px) {
+  #INSCRIBIR-SE {
+    top: auto;
+    bottom: 1em;
+    
+  }
+
 }
 
 #menu {
@@ -51,7 +81,8 @@ input {
 .buscador{
   margin-bottom: 15px;
   margin-block-end: -0.15em;
-  
+  display: flex; 
+  align-items: center;
 }
 
 .buttom {
@@ -63,10 +94,28 @@ input {
   color: white;
   height: 30px;
   margin-right: 10px;
+  margin-left: 3px;
 }
 
 .buttom:hover { 
   background: #BDA8DD;
+}
+
+@media (max-width:900px){
+  #menu{
+    flex-wrap: wrap;
+  }
+  .buscador{ 
+    width: 100%;
+    margin-top: 1em;
+   
+  }
+  input{
+    flex: 1;
+  }
+  .buttom {
+   margin-left: 3px;
+  }
 }
 
 #main-nav ul {
@@ -107,23 +156,65 @@ input {
   background: #3E8989;
  }
 
+ #mainh {
+   display: none;
+ }
+
+ label[for="mainh"] {
+  display: none;
+ }
+
+ @media (max-width:500px){
+   label[for="mainh"] {
+    display: inline;
+}
+ #mainh:checked ~ ul{
+   display: block;
+
+ }
+
+ #mainh ~ ul {
+   display: none;
+ } 
+}
+
 #slider-container {
   width: 100%;
   margin: auto;
   background: #564D65;
   margin-bottom: 15px;
+ position: relative;
 }
 
 #slider-container img {
-  max-height: 300px;
+  max-width: 200px;
   margin: auto;
 
 }
+
+
 #slider-controls {
   display: flex;
   justify-content: space-between;
   color: white;
 }
+
+#slider-container .zeta{
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0% ;
+    align-items: center;
+}
+
+div:first-child .zeta {
+  left: -4px;
+} 
+
+div:last-child .zeta {
+  right:-4px ;
+} 
 
 h2 {
   text-align: right;
@@ -186,8 +277,23 @@ a {
   justify-content: space-between;
   
 }
+@media (max-width:800px) {
+.img:nth-child(5), .img:nth-child(4) {
+  display: none;
 
-.next{
+
+}
+}
+
+@media (max-width:500px) {
+  
+}
+@media (max-width:1200px) {
+  
+}
+
+
+.next {
   width: 18px;
   height: 18px;
   align-items: center;
