@@ -6,12 +6,13 @@ body {
 
 #film {
   width: 110px;
-  margin-right: 25px;
-  margin-top: 10px;
+  margin-block-start: 0.25em;
+  margin-block-end: 0em;
+  margin-left: 0.25em;
 }
 
 h1 { 
-  font-size: 120px;
+  font-size: 125px;
   margin-block-start: 0.15em;
   margin-block-end: 0em;
  
@@ -23,20 +24,17 @@ h1 {
     }
     #film {
       width: 70px;
-
+      left: 1em;
     }
-
 }
 
-@media (max-width:320px) {
+@media (max-width:500px) {
   h1 {
-    font-size: 45px;
+    font-size: 550%;
   }
   #film {
-    width: 35px;
-
+    width: 15%;
   }
-
 }
 
 #INSCRIBIR-SE {
@@ -59,9 +57,7 @@ h1 {
   #INSCRIBIR-SE {
     top: auto;
     bottom: 1em;
-    
   }
-
 }
 
 #menu {
@@ -83,6 +79,7 @@ input {
   margin-block-end: -0.15em;
   display: flex; 
   align-items: center;
+
 }
 
 .buttom {
@@ -106,15 +103,15 @@ input {
     flex-wrap: wrap;
   }
   .buscador{ 
-    width: 100%;
+    width: 95%;
     margin-top: 1em;
-   
+    margin: 1em;
   }
   input{
     flex: 1;
   }
   .buttom {
-   margin-left: 3px;
+   margin-left: 6px;
   }
 }
 
@@ -132,7 +129,6 @@ input {
   position: relative;
 }
 
-
 #main-nav li a {
   text-decoration: none;
   padding: 1em 0.5em;
@@ -145,7 +141,6 @@ input {
   position: absolute ;
   right: -150px;
 }
-
 
 #main-nav ul a:hover {
   box-shadow: inset 0 -3px #564D65;
@@ -162,18 +157,19 @@ input {
 
  label[for="mainh"] {
   display: none;
+  position: absolute;
+  right: 2em;
+  top: 4em;
  }
 
- @media (max-width:500px){
-   label[for="mainh"] {
+@media (max-width:600px){
+  label[for="mainh"] {
     display: inline;
 }
- #mainh:checked ~ ul{
+  #mainh:checked ~ ul{
    display: block;
-
- }
-
- #mainh ~ ul {
+}
+  #mainh ~ ul {
    display: none;
  } 
 }
@@ -183,15 +179,13 @@ input {
   margin: auto;
   background: #564D65;
   margin-bottom: 15px;
- position: relative;
+  position: relative;
 }
 
 #slider-container img {
   max-width: 200px;
   margin: auto;
-
 }
-
 
 #slider-controls {
   display: flex;
@@ -200,12 +194,12 @@ input {
 }
 
 #slider-container .zeta{
-    position: absolute;
-    top: 50%;
-    width: 30px;
-    height: 30px;
-    margin: 0% ;
-    align-items: center;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0% ;
+  align-items: center;
 }
 
 div:first-child .zeta {
@@ -264,9 +258,7 @@ a {
 .imgc {
   opacity: 1;
   width: 409x;
-  height: 306px;
-
- 
+  height: 306px; 
 }
 
 .img {
@@ -275,23 +267,28 @@ a {
   opacity: 0.7;
   margin-bottom: 15px;
   justify-content: space-between;
-  
-}
-@media (max-width:800px) {
-.img:nth-child(5), .img:nth-child(4) {
-  display: none;
-
-
-}
 }
 
 @media (max-width:500px) {
-  
-}
-@media (max-width:1200px) {
-  
+.categorias a:nth-child(3) img {
+  display: none;
+ }
 }
 
+@media (max-width:800px) {
+.categorias a:nth-child(4) img {
+  display: none;
+ } 
+}
+
+@media (max-width:1200px) {
+  .categorias a:nth-child(6) img,
+  .categorias a:nth-child(5) img
+   {
+    display: none;
+   }
+  
+}
 
 .next {
   width: 18px;
@@ -304,22 +301,22 @@ a {
 }
 
 footer {
-    padding: 1em 0;
-    background: #3E8989;
-    color: white;
-    text-decoration: none;
+  padding: 1em 0;
+  background: #3E8989;
+  color: white;
+  text-decoration: none;
 }
 
 footer div {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 33%;
-    text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 33%;
+  text-align: center;
 }
 
 footer div:last-child {
-    padding-top: 1em;
-    font-size: 12px;
-    display: block;
-    width: 100%;
+  padding-top: 1em;
+  font-size: 12px;
+  display: block;
+  width: 100%;
 }
