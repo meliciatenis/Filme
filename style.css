@@ -15,7 +15,7 @@ h1 img {
 
 @media (max-width:640px) {
   h1{
-    margin: 0 0 0 0 ;
+    margin: 1em 0 0 0 ;
   }
 
   h1 img { 
@@ -27,7 +27,7 @@ h1 img {
 
 @media (max-width:500px) {
   h1{
-    margin: 0 0 0 0 ;
+    margin: 1em 0 0 0 ;
   } 
 
   h1 img { 
@@ -158,7 +158,7 @@ input {
 
  label[for="mainh"] {
   display: none;
-  position: fixed;
+  position: absolute;
   right: 1em;
   top: 6%;
   width: 20%;
