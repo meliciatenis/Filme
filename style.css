@@ -3,39 +3,32 @@ body {
  background-color: #1A181B;
  color: white;
 }
+h1{
+  margin: 1em 0 0 0 ;
+}
 
-#film {
-  width: 110px;
+h1 img { 
+  width: 70%;
   margin-block-start: 0.25em;
-  margin-block-end: 0em;
   margin-left: 0.25em;
 }
 
-h1 { 
-  font-size: 125px;
-  margin-block-start: 0.15em;
-  margin-block-end: 0em;
- 
-}
-
 @media (max-width:640px) {
-    h1 {
-      font-size: 90px;
-    }
-    #film {
-      width: 70px;
-      left: 1em;
-    }
+  h1 img { 
+    width: 70%;
+    margin-block-start: 0.25em;
+    margin-left: 0.25em;
+  }
 }
 
 @media (max-width:500px) {
-  h1 {
-    font-size: 550%;
-  }
-  #film {
-    width: 15%;
+  h1 img { 
+    width: 70%;
+    margin-block-start: 0.25em;
+    margin-left: 0.25em;
   }
 }
+
 
 #INSCRIBIR-SE {
   background: #05F140;
@@ -44,7 +37,7 @@ h1 {
   padding: 8px;
   border-radius: 10px;
   position: fixed;
-  right: 1em;
+  right: 2em;
   top: 1em;
   z-index: 2;
 }
@@ -53,7 +46,7 @@ h1 {
     background: #3E8989;
 }
 
-@media (max-width:640px) {
+@media (max-width:600px) {
   #INSCRIBIR-SE {
     top: auto;
     bottom: 1em;
@@ -157,9 +150,11 @@ input {
 
  label[for="mainh"] {
   display: none;
-  position: absolute;
-  right: 2em;
-  top: 4em;
+  position: fixed;
+  right: 1em;
+  top: 5%;
+  width: 20%;
+  margin-block-end: 1em; 
  }
 
 @media (max-width:600px){
@@ -287,7 +282,6 @@ a {
    {
     display: none;
    }
-  
 }
 
 .next {
@@ -319,4 +313,12 @@ footer div:last-child {
   font-size: 12px;
   display: block;
   width: 100%;
+}
+
+@media (max-width:890px){
+  footer div {
+    display: block;
+    justify-content: center;
+    width: 100%;
+  }
 }
