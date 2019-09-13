@@ -230,7 +230,7 @@ footer div:last-child {
      margin-top: 15px;
  }
 
- @media (max-width:750px) {
+ @media (max-width:900px) {
 
     #alinear {
         display: block;
