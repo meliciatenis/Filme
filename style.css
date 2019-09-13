@@ -125,7 +125,7 @@ input {
 
 #main-nav ul li {
   display: flex;
-  z-index: 3 ;
+  z-index: 5 ;
   position: relative;
 }
 
@@ -149,6 +149,7 @@ input {
 #main-nav li:hover > ul {
   display: block;
   background: #3E8989;
+  z-index: 5;
  }
 
  #mainh {
@@ -174,6 +175,7 @@ input {
   #mainh ~ ul {
    display: none;
  } 
+ 
 }
 
 #slider-container {

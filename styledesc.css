@@ -176,6 +176,10 @@ body {
   } 
  }
     
+ .pelicula p {
+  text-align: justify;
+ }
+
  footer {
   padding: 1em 0;
   background: #3E8989;
@@ -205,9 +209,52 @@ footer div:last-child {
   }
 }
 
-.pelicula.h1.p {
-text-align: center;
-font-size: 18pt;
-}  
+#alinear {
+  display: flex;
+  justify-content: center;
+} 
+
+  p {
+  width: 40%;
+  text-align: justify;
+  background: #564D65;
+  padding: 20px;
+  border-radius: 5px;
+ }
+
+ #img {
+     width: 400px;
+     margin-left: 25px;
+     margin-block-end: 15px;
+     border-radius: 5px;
+     margin-top: 15px;
+ }
+
+ @media (max-width:750px) {
+
+    #alinear {
+        display: block;
+        justify-content: center;
+        margin-left: 10%;
+    } 
+    
+
+    p {
+        width: 80%;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+       }
+    
+       #img {
+           width: 88%;
+           justify-content: center;
+           margin-block-start: 1em;
+           margin-block-end: 1em;
+           margin-left: 0em;
+           margin-inline-end: 1em ;
+       }
 
 
+   }

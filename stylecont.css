@@ -189,8 +189,9 @@ p {
 form {
   display: grid;
   background: #564D65;
+  border-radius: 5px;
   justify-self: center;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 0.7fr 1.5fr;
   grid-gap: 10px;
   max-width: 75%;
   margin: auto;
