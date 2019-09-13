@@ -8,7 +8,7 @@ h1{
 }
 
 h1 img { 
-  width: 70%;
+  width: 80%;
   margin-block-start: 0.25em;
   margin-left: 0.25em;
 }
@@ -19,7 +19,7 @@ h1 img {
   }
 
   h1 img { 
-    width: 70%;
+    width: 80%;
     margin-block-start: 0.25em;
     margin-left: 0.25em;
   }
@@ -31,12 +31,11 @@ h1 img {
   } 
 
   h1 img { 
-    width: 70%;
+    width: 80%;
     margin-block-start: 0.25em;
     margin-left: 0.25em;
   }
 }
-
 
 #INSCRIBIR-SE {
   background: #05F140;
@@ -159,10 +158,10 @@ input {
  label[for="mainh"] {
   display: none;
   position: absolute;
-  right: 1em;
-  top: 6%;
-  width: 20%;
-  margin-block-end: 1em; 
+  right: 10px;
+  top: 11%;
+  width: 15%;
+  margin-block-end: 1em;
  }
 
 @media (max-width:600px){
@@ -247,7 +246,7 @@ a {
   text-align: center;
   margin-right : 20px;
   margin-left : 20px;
-  }
+}
 
 .categorias a img:hover {
   background-color: #BDA8DD; 
