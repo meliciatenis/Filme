@@ -197,13 +197,13 @@ body {
        margin-top: 15px;
    }
 
-   @media (max-width:750px) {
+@media (max-width:750px) {
 
-    #alinear {
-        display: block;
-        justify-content: center;
-        margin-left: 10%;
-    } 
+  #alinear {
+      display: block;
+      justify-content: center;
+      margin-left: 10%;
+  } 
     
 
     p {
@@ -222,8 +222,6 @@ body {
            margin-left: 0em;
            margin-inline-end: 1em ;
        }
-
-
    }
 
    

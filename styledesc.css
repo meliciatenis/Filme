@@ -209,21 +209,29 @@ footer div:last-child {
   }
 }
 
+h2 { text-align: center;
+     font-size: 60px;
+
+}
+
 #alinear {
   display: flex;
   justify-content: center;
 } 
 
   p {
-  width: 40%;
+  width: 50%;
   text-align: justify;
   background: #564D65;
   padding: 20px;
   border-radius: 5px;
+  justify-content: center;
+  margin-inline-start: 20px;
  }
 
  #img {
-     width: 400px;
+     width: 300px;
+     height: 450px;
      margin-left: 25px;
      margin-block-end: 15px;
      border-radius: 5px;
@@ -247,8 +255,9 @@ footer div:last-child {
         margin-inline-end: 0px;
        }
     
-       #img {
-           width: 88%;
+       img {
+           width: 250px;
+           height: 350px;
            justify-content: center;
            margin-block-start: 1em;
            margin-block-end: 1em;
